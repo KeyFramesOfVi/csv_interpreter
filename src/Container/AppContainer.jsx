@@ -214,7 +214,6 @@ export default connect(
       dispatch((dispatch, getState) => {
         dispatch({ type: 'HANDLE_FILTER', filterInfo })
         let state = getState()
-        console.log(state.filterInfo)
         dispatch({
           type: 'HANDLE_DATA',
           table: state.table,

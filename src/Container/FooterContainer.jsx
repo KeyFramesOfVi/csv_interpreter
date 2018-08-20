@@ -11,8 +11,6 @@ class FooterContainer extends Component {
    * @return {number} the mean of a given xPos column.
    */
   isInactive = (xPos, columnTypes) => {
-    console.log(xPos)
-    console.log(columnTypes)
     if (!xPos) {
       return true
     }

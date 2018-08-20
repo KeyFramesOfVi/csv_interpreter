@@ -1,4 +1,4 @@
-import parser from 'csv-parse/lib/sync'
+// import parser from 'csv-parse/lib/sync'
 
 /**
  * Either sets the value to a given value or the row number.
@@ -104,8 +104,8 @@ export default (state = createTable(), action) => {
   if (action.type === 'OPEN_CSV') {
 
     // Use Node JS csv library to parse CSV file
-    const table = parser(action.csvData)
-    // const myTable = parseCSVFile(action.csvData)
+    // const table = parser(action.csvData)
+    const table = parseCSVFile(action.csvData)
     if (table.length > 0) {
       return csvToTable(table)
     }
