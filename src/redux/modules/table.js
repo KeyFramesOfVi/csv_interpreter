@@ -1,4 +1,5 @@
 import parser from 'csv-parse/lib/es5/sync'
+
 /**
  * Either sets the value to a given value or the row number.
  *
