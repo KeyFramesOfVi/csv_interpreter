@@ -10,6 +10,8 @@ export default (state = [], action) => {
       const filterFunction = getFilterFunction(value[0])
       return [filterFunction, value[1], value[0], value[2]]
     })
+  } else if (action.type === 'RESET_DATA_MANIPULATIONS') {
+    return []
   }
   return state
 }

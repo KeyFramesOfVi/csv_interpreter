@@ -10,6 +10,8 @@ export default (state = [], action) => {
     }
     const compare = getSortComparator(action.label, action.index)
     return  [compare, action.index, action.label]
+  } else if (action.type === 'RESET_DATA_MANIPULATIONS') {
+    return []
   }
   return state
 }

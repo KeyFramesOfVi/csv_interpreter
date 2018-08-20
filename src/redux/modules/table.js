@@ -50,7 +50,7 @@ const convertValue = (value, row) => {
     return value
   } else if (isNaN(value)) {
     let parsedString = value.replace(/[0-9]/g, '')
-    let onlyCommas = new RegExp('^[,\,]+$').test(parsedString)
+    const onlyCommas = new RegExp('^[,\,]+$').test(parsedString)
     if (onlyCommas) {
       return +value.replace(/\D/g,'')
     } else {

@@ -74,6 +74,10 @@ export default connect(
         // Reset the xPos and yPos, and reset our explore and filter bools.
         dispatch({ type: 'RESET_POSITION' })
         dispatch({ type: 'RESET_TOGGLERS' })
+
+        // Reset Sort and Filters
+        dispatch({ type: 'RESET_DATA_MANIPULATIONS'})
+        //
       }),
     toggleSort: (sortKey, index) => {
       dispatch((dispatch, getState) => {
