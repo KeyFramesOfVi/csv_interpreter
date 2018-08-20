@@ -1,0 +1,148 @@
+.filter
+{
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    right: 0;
+
+    width: 20vw;
+    height: 84.5vh;
+
+    border: 3px solid red;
+    background-color: white;
+    overflow: hidden;
+}
+
+[class*='close-'] {
+  color: #777;
+  font: 14px/100% arial, sans-serif;
+  position: absolute;
+  right: 5px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  top: 5px;
+}
+.close-thik:after {
+  content: '✖'; /* UTF-8 symbol */
+}
+
+.filter-options {
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 80vh;
+}
+
+.button-menu {
+  border: 1px solid red;
+  width: 100%;
+}
+.filter-button-left
+{
+    position: absolute;
+    font-size: 2vh;
+    font-weight: bold;
+    white-space: nowrap;
+    position: absolute;
+    width: 8vw;
+    height: 3vh;
+    float: left;
+    color: black;
+    text-align: center;
+}
+
+.filter-button-left:hover
+{
+  background-color: #e2e2e2;
+}
+
+.filter-button-right
+{
+    font-size: 2vh;
+    font-weight: bold;
+    white-space: nowrap;
+    text-align: center;
+    position: static;
+    width: 8vw;
+    height: 3vh;
+    color: black;
+    float: right;
+    clear: left;
+}
+
+.filter-button-right:hover
+{
+  background-color: #e2e2e2;
+}
+
+
+
+nav ul{
+  position: absolute;
+  display: inline-block;
+  right: 2vw;
+  top: 20px;
+  height: 3vh;
+  width: 15vw;
+  font-size: 1.5vh;
+  overflow:hidden;
+  overflow-y:scroll;
+}
+
+.filter-form-header,
+.filter-form {
+  background-color: #F6F7F8;
+  border: 1px solid #D6D9DC;
+  border-radius: 3px;
+  width: 12vw;
+  padding: 50px;
+  margin: 0 0 40px 0;
+}
+
+.filter-row {
+  flex-direction: row;
+  align-items: flex-start; /* To avoid stretching */
+  margin-bottom: 20px;
+}
+.filter-row input[type='text'] {
+  width: 14.7vw;
+  height: initial;
+}
+.filter-row label {
+  font-size: 2.5vh;
+  font-style: oblique;
+  text-align: right;
+  width: 120px;
+  margin-top: 7px;
+  padding-right: 20px;
+}
+
+.filter-row select {
+  width: 15vw;
+  padding: 5px;
+  font-size: 14px;            /* This won't work in Chrome or Safari */
+  -webkit-appearance: none;   /* This will make it work */
+}
+
+.filter-row .button {
+  font-size: 16px;
+  font-weight: bold;
+  float: left;
+  position: static;
+
+  color: #FFFFFF;
+  background-color: #FF4136;
+  white-space: nowrap;
+  border: none;
+  border-radius: 1px;
+
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.filter-row .button:hover {
+  background-color: #85144b;
+}
+
+.filter-row .button:active {
+  background-color: #407FC7;
+}

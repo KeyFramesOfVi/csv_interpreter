@@ -1,0 +1,42 @@
+.explore
+{
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    right: 0;
+    overflow: scroll;
+    width: 20vw;
+    height: 84.5vh;
+    border: 3px solid green;
+    background-color: white;
+}
+
+[class*='close-'] {
+  color: #777;
+  font: 14px/100% arial, sans-serif;
+  position: absolute;
+  right: 5px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #fff;
+  top: 5px;
+}
+.close-thik:after {
+  content: '✖'; /* UTF-8 symbol */
+}
+
+.explore h3 {
+  text-align: center;
+}
+
+.explore ul {
+  transform: translate(-10%);
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  font-size: 1.8vh;
+  width: 100%;
+}
+
+.explore li {
+  padding: 0.5vh;
+}

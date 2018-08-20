@@ -1,0 +1,6 @@
+.menu {
+  height: 5vh;
+  float: left;
+  border-bottom: 1px solid black;
+  width: 100vw;
+}

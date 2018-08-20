@@ -1,0 +1,37 @@
+.scrollmenu
+{
+    position: relative;
+    z-index: 1;
+
+    float: left;
+    overflow: scroll;
+
+    width: 100%;
+    height: 82%;
+
+    white-space: nowrap;
+
+    scroll-behavior: smooth;
+}
+
+.table
+{
+    position: relative;
+
+    float: left;
+    clear: left;
+    overflow: hidden;
+}
+
+/* way the hell off screen */
+
+.scrollbar-measure
+{
+    position: absolute;
+    top: -9999px;
+
+    overflow: scroll;
+
+    width: 100px;
+    height: 100px;
+}

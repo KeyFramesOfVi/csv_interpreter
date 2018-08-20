@@ -1,0 +1,14 @@
+.active {
+  white-space: nowrap;
+  width: 20px;
+  font-size: 1.5vh;
+  text-align: center;
+}
+
+.active:hover {
+  background-color: #e2e2e2;
+}
+
+.hidden {
+  display: none;
+}
